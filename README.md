@@ -1,7 +1,7 @@
 Dockerization :
 
 mvn clean package 
-java -jar .\target insurance-0.0.1-SNAPSHOT.jar
+java -jar .\target\insurance-0.0.1-SNAPSHOT.jar
 docker build --tag=insurance:latest .
 docker run -p8888:8081 insurance:latest 	// You can access the insurance service on http://localhost:8888/health
 docker tag insurance:latest <yourDockerId>/insurance:latest
